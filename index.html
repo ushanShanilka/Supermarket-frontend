@@ -2,9 +2,314 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>super-market</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+
+<!-- header section starts-->
+<header>
+
+    <a href="#" class="logo"><img src="assets/supermarket-logo-land.png" alt=""></a>
+
+    <nav class="navbar">
+        <a class="active" href="#home">home</a>
+        <a id="btn-product" >Product</a>
+        <a href="#about">About</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i onclick="menuToggle();" class="fa-solid fa-user"></i>
+
+        <div class="profileMenu">
+            <img id="proPicCopy" class="proCopy" src="" alt="">
+            <h4 class="profileName">Jone</h4>
+            <h4 class="email">Jone@gmail.com</h4>
+            <ul>
+                <li><i class="fa fa-sign-out"></i><a href="index.html">Log Out</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</header>
+<!-- header section ends-->
+
+
+<!-- home section starts  -->
+<section class="home" id="home">
+
+    <div class="swiper-container home-slider">
+
+        <div class="swiper-wrapper wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <h3>Kist Tomato Sauce 400g</h3>
+                    <p>Kist Tomato Sauce, Smooth in Texture and rich in <br> flavour, this sauce is a popular accompaniment for <br> fried savouries, french fries, fried rice, pasta ...</p>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+                <div class="image">
+                    <img src="assets/kist-tomato-sauce.png" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <h3>Kist Tomato Sauce 400g</h3>
+                    <p>Kist Tomato Sauce, Smooth in Texture and rich in <br> flavour, this sauce is a popular accompaniment for <br> fried savouries, french fries, fried rice, pasta ...</p>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+                <div class="image">
+                    <img src="assets/kist-tomato-sauce.png" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <h3>Kist Tomato Sauce 400g</h3>
+                    <p>Kist Tomato Sauce, Smooth in Texture and rich in <br> flavour, this sauce is a popular accompaniment for <br> fried savouries, french fries, fried rice, pasta ...</p>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+                <div class="image">
+                    <img src="assets/kist-tomato-sauce.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+<!-- home section ends -->
+
+
+<!-- popular-product section starts  -->
+<section class="popular-product" id="dishes">
+
+    <h1 class="heading"> POPULAR PRODUCT </h1>
+
+    <div id="main" class="box-container">
+
+        <div class="box">
+            <img src="assets/maliban.png" alt="">
+            <h3>Hawaiian Cookies</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>$15.99</span>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="assets/krisco.png" alt="">
+            <h3>Krisco</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>$22.99</span>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="assets/Sweet-Chocolate-Candy-Bar-Transparent-PNG.png" alt="">
+            <h3>Sweet Chocolate</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <span>$10.99</span>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+    </div>
+
+</section>
+<!-- popular-product section ends -->
+
+
+<!-- about section starts  -->
+<section class="about" id="about">
+
+    <h1 class="heading"> ABOUT US? </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="assets/1(1).jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Best Product In The Country</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Dolore, <br>
+                Sequi Corrupti Corporis Quaerat Voluptatem Ipsam<br>
+                Neque Labore Modi Autem, Saepe<br>
+                Numquam Quod Reprehenderit Rem? Tempora<br>
+                Aut Soluta Odio Corporis Nihil!
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- about section ends -->
+
+
+<!-- christmas section starts  -->
+<section class="popular-product" id="dishes">
+
+    <h1 class="heading"> CHRISTMAS SPECIAL </h1>
+
+    <div id="main" class="box-container">
+
+        <div class="box">
+            <img src="assets/maliban.png" alt="">
+            <h3>Hawaiian Cookies</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>$15.99</span>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="assets/krisco.png" alt="">
+            <h3>Krisco</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>$22.99</span>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="assets/Sweet-Chocolate-Candy-Bar-Transparent-PNG.png" alt="">
+            <h3>Sweet Chocolate</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <span>$10.99</span>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+    </div>
+
+</section>
+<!-- christmas section ends -->
+
+
+<!-- review section starts  -->
+<section class="review" id="review">
+
+    <h1 class="heading"> CUSTOMER REVIEWS </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="assets/person_100px.png" alt="">
+                    <div class="user-info">
+                        <h3>User</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Sit Fugiat
+                    Consequuntur Repellendus Aperiam Deserunt Nihil, Corporis Fugit </p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="assets/person_100px.png" alt="">
+                    <div class="user-info">
+                        <h3>User</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Sit Fugiat
+                    Consequuntur Repellendus Aperiam Deserunt Nihil, Corporis Fugit </p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="assets/person_100px.png" alt="">
+                    <div class="user-info">
+                        <h3>User</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Sit Fugiat
+                    Consequuntur Repellendus Aperiam Deserunt Nihil, Corporis Fugit </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- review section ends -->
+
+
+<!-- footer section starts  -->
+<section class="footer">
+    <div class="credit"> © Super-Market 2022 </div>
+</section>
+<!-- footer section ends -->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
