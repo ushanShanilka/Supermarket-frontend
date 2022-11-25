@@ -19,8 +19,8 @@
     <a href="#" class="logo"><img src="assets/supermarket-logo-land.png" alt=""></a>
 
     <nav class="navbar">
-        <a class="active" href="#home">home</a>
-        <a id="btn-product" >Product</a>
+        <a class="active" href="#home">Home</a>
+        <a id="btn-product" onclick="testJS('ushan')"  >Product</a>
         <a href="#about">About</a>
         <a href="#">Contact Us</a>
     </nav>
@@ -95,7 +95,7 @@
 
 
 <!-- popular-product section starts  -->
-<section class="popular-product" id="dishes">
+<section class="popular-product" >
 
     <h1 class="heading"> POPULAR PRODUCT </h1>
 
@@ -103,7 +103,7 @@
 
         <div class="box">
             <img src="assets/maliban.png" alt="">
-            <h3>Hawaiian Cookies</h3>
+            <h3 id="product-name">Hawaiian Cookies</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -112,12 +112,12 @@
                 <i class="fas fa-star-half-alt"></i>
             </div>
             <span>$15.99</span>
-            <a href="#" class="btn">Order Now</a>
+            <a href="product-view.html" onclick="productView(this.product-name)" class="btn">View More</a>
         </div>
 
         <div class="box">
             <img src="assets/krisco.png" alt="">
-            <h3>Krisco</h3>
+            <h3 id="product-name">Krisco</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -126,7 +126,7 @@
                 <i class="fas fa-star-half-alt"></i>
             </div>
             <span>$22.99</span>
-            <a href="#" class="btn">Order Now</a>
+            <a href="#" class="btn" id="1" onclick="productView(this.id)">View More</a>
         </div>
 
         <div class="box">
@@ -140,7 +140,7 @@
                 <i class="fas fa-star"></i>
             </div>
             <span>$10.99</span>
-            <a href="#" class="btn">Order Now</a>
+            <a href="#" class="btn">View More</a>
         </div>
     </div>
 
@@ -175,7 +175,7 @@
 
 
 <!-- christmas section starts  -->
-<section class="popular-product" id="dishes">
+<section class="popular-product" >
 
     <h1 class="heading"> CHRISTMAS SPECIAL </h1>
 

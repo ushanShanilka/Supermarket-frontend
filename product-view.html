@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super-Market | Product-View</title>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- header section starts-->
+<header>
+
+  <a href="#" class="logo"><img src="assets/supermarket-logo-land.png" alt=""></a>
+
+  <nav class="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a id="btn-product" >Product</a>
+    <a href="index.html#about">About</a>
+    <a href="#">Contact Us</a>
+  </nav>
+
+  <div class="icons">
+    <i class="fas fa-bars" id="menu-bars"></i>
+    <i onclick="menuToggle();" class="fa-solid fa-user"></i>
+
+    <div class="profileMenu">
+      <img id="proPicCopy" class="proCopy" src="" alt="">
+      <h4 class="profileName">Jone</h4>
+      <h4 class="email">Jone@gmail.com</h4>
+      <ul>
+        <li><i class="fa fa-sign-out"></i><a href="index.html">Log Out</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+</header>
+<!-- header section ends-->
+
+
+<div class="small-container single-product">
+  <div class="row">
+    <div class="col-2">
+      <img src="assets/krisco.png" width="100%" id="ProductImg">
+
+      <div class="small-img-row">
+        <div class="small-img-col">
+          <img onclick="clickImage(this.src)" src="assets/krisco.png" class="small-img">
+        </div>
+        <div class="small-img-col">
+          <img onclick="clickImage(this.src)" src="assets/Sweet-Chocolate-Candy-Bar-Transparent-PNG.png" class="small-img">
+        </div>
+        <div class="small-img-col">
+          <img onclick="clickImage(this.src)" src="assets/maliban.png" class="small-img">
+        </div>
+      </div>
+
+    </div>
+    <div class="col-2">
+      <h1>Product name</h1>
+      <h4>$50.00</h4>
+      <label>
+        <select class="border">
+          <option>Select Size</option>
+          <option>XXL</option>
+          <option>XL</option>
+          <option>Large</option>
+          <option>Medium</option>
+          <option>Small</option>
+        </select>
+      </label>
+      <label for="cartQty"></label><input id="cartQty" type="number" value="1">
+      <a id="btnAddCart" class="btn">Add to Cart</a>
+      <h1 style="margin-top: 40px">Product Details <i class="fas fa-indent"></i></h1>
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur consequatur consequuntur
+        distinctio dolorem eius eligendi error, est impedit </p>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/product-view.js"></script>
+</body>
+</html>

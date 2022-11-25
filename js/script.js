@@ -26,12 +26,12 @@ window.onscroll = () =>{
         let offset = sec.offsetTop - 150;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height){
-            navLinks.forEach(links =>{
-                links.classList.remove('active');
-                document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
-            });
-        };
+        // if(top >= offset && top < offset + height){
+        //     navLinks.forEach(links =>{
+        //         links.classList.remove('active');
+        //         document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
+        //     });
+        // };
 
     });
 
@@ -82,10 +82,18 @@ var box = document.getElementById("popular-product");
 $('#btn-product').click(function (){
     console.log("hello")
 
-    main.insertAdjacentHTML('beforeend', '<div class="box" id="popular-product"> <img src="" alt=""> <h3>tasty food</h3> <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </div><span>$15.99</span> <a href="#order" class="btn">Order Now</a> </div>');
+    main.insertAdjacentHTML('beforeend', '<div class="box" id="popular-product"> <img src="" alt=""> <h3>tasty food</h3> <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </div><span>$15.99</span> <a class="btn" onclick="productView(20)">View More</a> </div>');
 });
 
 function menuToggle(){
     let toggleMenu = document.querySelector('.profileMenu');
     toggleMenu.classList.toggle('active')
+}
+
+function productView(id) {
+    console.log(id)
+    // var b = document.getElementById('name').value,
+        url = 'http://localhost:63342/Supermarket-frontend/product-view.html?name=' + encodeURIComponent(id);
+
+    document.location.href = url;
 }

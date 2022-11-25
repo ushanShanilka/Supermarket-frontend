@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super-Market | Product</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- header section starts-->
+<header>
+
+  <a href="#" class="logo"><img src="assets/supermarket-logo-land.png" alt=""></a>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a class="active" id="btn-product" href="#" >Product</a>
+    <a href="index.html#about">About</a>
+    <a href="#">Contact Us</a>
+  </nav>
+
+  <div class="icons">
+    <i class="fas fa-bars" id="menu-bars"></i>
+    <i onclick="menuToggle();" class="fa-solid fa-user"></i>
+
+    <div class="profileMenu">
+      <img id="proPicCopy" class="proCopy" src="" alt="">
+      <h4 class="profileName">Jone</h4>
+      <h4 class="email">Jone@gmail.com</h4>
+      <ul>
+        <li><i class="fa fa-sign-out"></i><a href="index.html">Log Out</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+</header>
+<!-- header section ends-->
+
+<!-- search section start -->
+<div class="search-bar">
+    <div class="form__group field">
+        <input onkeyup="searchProduct(this.value)" type="input" class="form__field" placeholder="search" id='search' required />
+        <label for="search" class="form__label">search here.. </label>
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
+</div>
+<!-- search section end -->
+
+<!-- popular-product section starts  -->
+<section class="popular-product" >
+
+    <div id="main" class="box-container">
+
+        <div class="box">
+            <img src="assets/maliban.png" alt="">
+            <h3>Hawaiian Cookies</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>$15.99</span>
+            <a href="#" class="btn">View More</a>
+        </div>
+
+        <div class="box">
+            <img src="assets/krisco.png" alt="">
+            <h3>Krisco</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>$22.99</span>
+            <a href="#" class="btn">View More</a>
+        </div>
+
+        <div class="box">
+            <img src="assets/Sweet-Chocolate-Candy-Bar-Transparent-PNG.png" alt="">
+            <h3>Sweet Chocolate</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <span>$10.99</span>
+            <a href="#" class="btn">View More</a>
+        </div>
+    </div>
+
+</section>
+<!-- popular-product section ends -->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
