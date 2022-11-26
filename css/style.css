@@ -485,7 +485,6 @@ header .icons #menu-bars{
 }
 
 .form__field {
-    font-family: inherit;
     width: 100%;
     border: 0;
     border-bottom: 2px solid var(--light-color);
@@ -604,6 +603,262 @@ input:focus{
     border: 1px solid #ff523b;
 }
 
+/*cart page*/
+.product-image {
+    float: left;
+    width: 20%;
+}
+
+.product-details {
+    float: left;
+    width: 37%;
+}
+
+.product-price {
+    float: left;
+    width: 12%;
+}
+
+.product-quantity {
+    float: left;
+    width: 10%;
+}
+
+.product-removal {
+    float: left;
+    width: 9%;
+}
+
+.product-line-price {
+    float: left;
+    width: 12%;
+    text-align: right;
+}
+
+.group:before, .shopping-cart:before,
+.column-labels:before,
+.product:before,
+.totals-item:before,
+.group:after,
+.shopping-cart:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+    content: "";
+    display: table;
+}
+
+.group:after, .shopping-cart:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+    clear: both;
+}
+
+.group, .shopping-cart,
+.column-labels,
+.product,
+.totals-item {
+    zoom: 1;
+}
+
+.product .product-price:before,
+.product .product-line-price:before,
+.totals-value:before {
+    content: "$";
+}
+
+.shopping-cart {
+    margin-top: 95px;
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column-labels label {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.column-labels .product-image,
+.column-labels .product-details,
+.column-labels .product-removal {
+    text-indent: -9999px;
+}
+
+.product {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.product .product-image {
+    text-align: center;
+}
+.product .product-image img {
+    width: 100px;
+}
+.product .product-details .product-title {
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.product .product-details .product-description {
+    margin: 5px 20px 5px 0;
+    line-height: 1.4em;
+}
+.product .product-quantity input {
+    width: 40px;
+}
+.product .remove-product {
+    border: 0;
+    padding: 4px 8px;
+    background-color: var(--light-red);
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.product .remove-product:hover {
+    background-color: var(--light-red);
+}
+
+/* Totals section */
+.totals .totals-item {
+    float: right;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.totals .totals-item label {
+    float: left;
+    clear: both;
+    width: 79%;
+    text-align: right;
+}
+.totals .totals-item .totals-value {
+    float: right;
+    width: 21%;
+    text-align: right;
+}
+
+#cart-total {
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.checkout {
+    float: right;
+    border: 0;
+    margin-top: 20px;
+    padding: 6px 25px;
+    background-color: var(--light-red);
+    color: #fff;
+    font-size: 25px;
+    border-radius: 3px;
+}
+
+.checkout:hover {
+    background-color: var(--light-color);
+    cursor: pointer;
+}
+
+/*login page*/
+.main-form{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    height: 100vh;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    margin: auto;
+}
+
+.form-container{
+    background: white;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    /*padding: 20px 0;*/
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    border: none;
+    width: 50%;
+    /*background: var(--light-red);*/
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-btn{
+    display: flex;
+    flex-direction: column;
+}
+.form-btn .button{
+    display: flex;
+}
+.form-btn .indicator{
+
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 78px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#singUpForm{
+    left: -300px;
+}
+#adminForm{
+    left: 300px;
+    width: 300px;
+}
+form a{
+    font-size: 12px;
+}
+#indicator{
+    width: 62px;
+    border: none;
+    background: var(--light-red);
+    height: 3px;
+    margin-left: 96px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+.input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--black);
+}
+
+
 /* media queries  */
 
 
@@ -677,6 +932,56 @@ input:focus{
 
 }
 
+@media screen and (max-width: 650px) {
+    .shopping-cart {
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
+
+    .column-labels {
+        display: none;
+    }
+
+    .product-image {
+        float: right;
+        width: auto;
+    }
+    .product-image img {
+        margin: 0 0 10px 10px;
+    }
+
+    .product-details {
+        float: none;
+        margin-bottom: 10px;
+        width: auto;
+    }
+
+    .product-price {
+        clear: both;
+        width: 70px;
+    }
+
+    .product-quantity {
+        width: 100px;
+    }
+    .product-quantity input {
+        margin-left: 20px;
+    }
+
+    .product-quantity:before {
+        content: "x";
+    }
+
+    .product-removal {
+        width: auto;
+    }
+
+    .product-line-price {
+        float: right;
+        width: 70px;
+    }
+}
+
 @media (max-width:450px){
 
     html{
@@ -707,4 +1012,29 @@ input:focus{
         display: contents!important;
     }
 
+}
+
+/* Make more adjustments for phone */
+@media screen and (max-width: 350px) {
+    .product-removal {
+        float: right;
+    }
+
+    .product-line-price {
+        float: right;
+        clear: left;
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .product .product-line-price:before {
+        content: "Item Total: $";
+    }
+
+    .totals .totals-item label {
+        width: 60%;
+    }
+    .totals .totals-item .totals-value {
+        width: 40%;
+    }
 }

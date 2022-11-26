@@ -20,7 +20,7 @@
 
     <nav class="navbar">
         <a class="active" href="#home">Home</a>
-        <a id="btn-product" onclick="testJS('ushan')"  >Product</a>
+        <a id="btn-product" href="product.html"  >Product</a>
         <a href="#about">About</a>
         <a href="#">Contact Us</a>
     </nav>
@@ -31,10 +31,11 @@
 
         <div class="profileMenu">
             <img id="proPicCopy" class="proCopy" src="" alt="">
-            <h4 class="profileName">Jone</h4>
-            <h4 class="email">Jone@gmail.com</h4>
+            <h4 id="user-name" class="profileName"></h4>
+            <h4 id="email" class="email">Jone@gmail.com</h4>
             <ul>
-                <li><i class="fa fa-sign-out"></i><a href="index.html">Log Out</a></li>
+                <li id="logout-btn" onclick="logout()"><i class="fa fa-sign-out"></i><a href="index.html">Log Out</a></li>
+                <li id="login-btn" onclick="log()"><i class="fa fa-sign-in"></i><a >Log In</a></li>
             </ul>
         </div>
 
@@ -140,7 +141,7 @@
                 <i class="fas fa-star"></i>
             </div>
             <span>$10.99</span>
-            <a href="#" class="btn">View More</a>
+            <a href="#" class="btn" onclick="productView(this.id)">View More</a>
         </div>
     </div>
 
@@ -192,7 +193,7 @@
                 <i class="fas fa-star-half-alt"></i>
             </div>
             <span>$15.99</span>
-            <a href="#" class="btn">Order Now</a>
+            <a href="#" class="btn" onclick="productView(this.id)">View More</a>
         </div>
 
         <div class="box">
@@ -206,7 +207,7 @@
                 <i class="fas fa-star-half-alt"></i>
             </div>
             <span>$22.99</span>
-            <a href="#" class="btn">Order Now</a>
+            <a href="#" class="btn" onclick="productView(this.id)">View More</a>
         </div>
 
         <div class="box">
@@ -220,7 +221,7 @@
                 <i class="fas fa-star"></i>
             </div>
             <span>$10.99</span>
-            <a href="#" class="btn">Order Now</a>
+            <a href="#" class="btn" onclick="productView(this.id)">View More</a>
         </div>
     </div>
 
@@ -310,6 +311,7 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/common.js"></script>
 
 </body>
 </html>

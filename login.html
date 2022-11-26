@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super-Market | Login</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- header section starts-->
+<header>
+
+    <a href="index.html" class="logo"><img src="assets/supermarket-logo-land.png" alt=""></a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a class="active" id="btn-product" href="#" >Product</a>
+        <a href="index.html#about">About</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i onclick="menuToggle();" class="fa-solid fa-user"></i>
+
+        <div class="profileMenu">
+            <img id="proPicCopy" class="proCopy" src="" alt="">
+            <h4 id="user-name" class="profileName"></h4>
+            <h4 id="email" class="email">Jone@gmail.com</h4>
+            <ul>
+                <li id="logout-btn" onclick="logout()"><i class="fa fa-sign-out"></i><a href="index.html">Log Out</a></li>
+                <li id="login-btn" onclick="log()"><i class="fa fa-sign-in"></i><a href="index.html">Log In</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</header>
+<!-- header section ends-->
+
+<!--main section start-->
+<div class="main-form">
+    <div class="col-2">
+        <div class="form-container">
+            <div class="form-btn">
+                <div class="button">
+                    <span id="sing-up" onclick="singUp()">Sing Up</span>
+                    <span id="sing-in" onclick="singIn()">Sing In</span>
+                </div>
+            </div>
+
+            <form id="singInForm">
+                <input class="input" type="email" id="txt-email" name="phone" placeholder="email*">
+                <input class="input" type="password" id="txt-password" name="phone" placeholder="password*">
+
+                <button id="btnLogin" type="button" class="btn">Sing In</button>
+                <a>Forget Password</a>
+            </form>
+
+            <form id="singUpForm">
+                <input class="input" type="email" id="txt-reg-username" name="phone" placeholder="user name*">
+                <input class="input" type="email" id="txt-reg-email" name="phone" placeholder="email*">
+                <input class="input" type="password" id="txt-reg-password" name="phone" placeholder="password*">
+
+                <button id="btnRegister" type="button" class="btn">Sing Up</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!--main section end-->
+
+<!--&lt;!&ndash; footer section starts  &ndash;&gt;-->
+<!--<section class="footer">-->
+<!--    <div class="credit"> © Super-Market 2022 </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; footer section ends &ndash;&gt;-->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/login.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
