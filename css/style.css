@@ -241,6 +241,9 @@ header .icons #menu-bars{
     background: transparent!important;
 }
 
+.home{
+    overflow: hidden;
+}
 
 .home .home-slider .slide{
     display: flex;
@@ -403,6 +406,7 @@ header .icons #menu-bars{
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 
 .review .slide{
