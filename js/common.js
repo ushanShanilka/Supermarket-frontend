@@ -3,6 +3,41 @@
  * @since 11/26/2022
  **/
 
+
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+
+let section = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header .navbar a');
+
+window.onscroll = () =>{
+
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+
+    section.forEach(sec =>{
+
+        let top = window.scrollY;
+        let height = sec.offsetHeight;
+        let offset = sec.offsetTop - 150;
+        let id = sec.getAttribute('id');
+
+        if(top >= offset && top < offset + height){
+            navLinks.forEach(links =>{
+                links.classList.remove('active');
+                document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
+            });
+        };
+
+    });
+
+}
+
 function menuToggle(){
     let toggleMenu = document.querySelector('.profileMenu');
     toggleMenu.classList.toggle('active')
@@ -31,14 +66,14 @@ function logout(){
 }
 
 function log(){
-    url = 'http://localhost:63342/Supermarket-frontend/login.html';
+    url = 'https://supermarket-lk.000webhostapp.com/login.html';
     document.location.href = url;
 }
 
 function productView(id) {
     console.log(id)
     // var b = document.getElementById('name').value,
-    url = 'http://localhost:63342/Supermarket-frontend/product-view.html?name=' + encodeURIComponent(id);
+    url = 'https://supermarket-lk.000webhostapp.com/product-view.html?name=' + encodeURIComponent(id);
 
     document.location.href = url;
 }
