@@ -30,7 +30,7 @@ window.onscroll = () =>{
         if(top >= offset && top < offset + height){
             navLinks.forEach(links =>{
                 links.classList.remove('active');
-                document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
+                // document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
             });
         };
 
@@ -50,30 +50,43 @@ window.onload = function () {
     let email = document.getElementById("email");
     let logoutBtn = document.getElementById("logout-btn");
     let loginBtn = document.getElementById("login-btn");
-    let item = localStorage.getItem("auth");
-    if (item == null){
+    let cartBtn = document.getElementById("cart-btn");
+    let localEmail = sessionStorage.getItem("email");
+    let localUserName = sessionStorage.getItem("username");
+    if (localEmail == null && localUserName == null){
         username.style.display='none'
         email.style.display='none'
         logoutBtn.style.display='none'
+        cartBtn.style.display='none'
     }else {
         loginBtn.style.display='none'
-        username.innerHTML  = "ushan"
+        username.innerHTML  = localUserName
+        email.innerHTML  = localEmail
     }
 }
 
 function logout(){
-    localStorage.removeItem("auth");
+    sessionStorage.removeItem("jwt");
+    sessionStorage.removeItem("username");
+    sessionStorage.removeItem("email");
 }
 
 function log(){
-    url = 'https://supermarket-lk.000webhostapp.com/login.html';
+    url = 'http://localhost:63342/Supermarket-frontend/login.html';
+    document.location.href = url;
+}
+
+function cart(){
+    url = 'http://localhost:63342/Supermarket-frontend/shopping-cart.html?_ijt=nki6vr7t9p83k2enaa01da27k';
     document.location.href = url;
 }
 
 function productView(id) {
     console.log(id)
     // var b = document.getElementById('name').value,
-    url = 'https://supermarket-lk.000webhostapp.com/product-view.html?name=' + encodeURIComponent(id);
+    url = 'http://localhost:63342/Supermarket-frontend/product-view.html?id=' + encodeURIComponent(id);
 
     document.location.href = url;
 }
+
+/*custom*/

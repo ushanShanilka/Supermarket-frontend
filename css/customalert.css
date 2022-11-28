@@ -1,0 +1,90 @@
+/**
+ * @author Ushan Shanilka <ushanshanilka80@gmail.com>
+ * @since 11/27/2022
+ **/
+.msgbox-area {
+    font-size: inherit;
+    max-height: 100%;
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+    right: 20px;
+    margin-top: 65px;
+}
+
+.msgbox-box {
+    font-size: inherit;
+    color: #ffffff;
+    background-color: #5CB811;
+    margin: 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.65);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    transition: opacity 256ms ease-in;
+}
+
+.msgbox-box-error {
+    font-size: inherit;
+    color: #ffffff;
+    background-color: red;
+    margin: 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.65);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    transition: opacity 256ms ease-in;
+}
+
+.msgbox-box.msgbox-box-hide {
+    opacity: 0;
+}
+.msgbox-box:last-child {
+    margin: 0;
+}
+
+.msgbox-content {
+    font-size: inherit;
+    padding: 1.5rem;
+    flex-shrink: 1;
+    text-align: center;
+}
+
+.msgbox-command {
+    padding: 1.5rem;
+    padding-top: 0.75rem;
+    display: flex;
+}
+
+.msgbox-close:hover {
+    color: #efefef;
+    text-shadow: 0 0 4px #ffffff;
+}
+.msgbox-close:first-child {
+    margin-left: auto;
+}
+.msgbox-close:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .msgbox-area {
+        left: 80px;
+        right: 80px;
+    }
+}
+@media (min-width: 768px) {
+    .msgbox-area {
+        width: 178px;
+        height: 0;
+        top: 15px;
+        left: auto;
+        right: 15px;
+    }
+}

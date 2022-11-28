@@ -36,6 +36,7 @@
             <ul>
                 <li id="logout-btn" onclick="logout()"><i class="fa fa-sign-out"></i><a href="index.html">Log Out</a></li>
                 <li id="login-btn" onclick="log()"><i class="fa fa-sign-in"></i><a >Log In</a></li>
+                <li id="cart-btn" onclick="cart()"><i class="fa fa-cart-shopping"></i><a >My Cart</a></li>
             </ul>
         </div>
 
@@ -49,7 +50,7 @@
     <div class="form__group field">
         <input onkeyup="searchProduct(this.value)" type="input" class="form__field" placeholder="search" id='search' required />
         <label for="search" class="form__label">search here.. </label>
-        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <i onclick="loadData()" class="fa-solid fa-magnifying-glass search-icon"></i>
     </div>
 </div>
 <!-- search section end -->
@@ -59,47 +60,6 @@
 
     <div id="main" class="box-container">
 
-        <div class="box">
-            <img src="assets/maliban.png" alt="">
-            <h3>Hawaiian Cookies</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <span>$15.99</span>
-            <a href="#" class="btn" onclick="productView(this.id)">View More</a>
-        </div>
-
-        <div class="box">
-            <img src="assets/krisco.png" alt="">
-            <h3>Krisco</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <span>$22.99</span>
-            <a href="#" class="btn" onclick="productView(this.id)">View More</a>
-        </div>
-
-        <div class="box">
-            <img src="assets/Sweet-Chocolate-Candy-Bar-Transparent-PNG.png" alt="">
-            <h3>Sweet Chocolate</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <span>$10.99</span>
-            <a href="#" class="btn" onclick="productView(this.id)">View More</a>
-        </div>
     </div>
 
 </section>

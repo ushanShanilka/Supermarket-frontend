@@ -724,9 +724,10 @@ input:focus{
     color: #fff;
     font-size: 12px;
     border-radius: 3px;
+    cursor: pointer;
 }
 .product .remove-product:hover {
-    background-color: var(--light-red);
+    background-color: var(--light-color);
 }
 
 /* Totals section */
